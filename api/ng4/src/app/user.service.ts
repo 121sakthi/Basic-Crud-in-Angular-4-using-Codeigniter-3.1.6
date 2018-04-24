@@ -8,7 +8,7 @@ export class UserService {
 
   private host = window.location.hostname;
   private headers = new Headers({'Content-Type': 'application/json'});
-  private usersURL = `http://${this.host}/api/v1/users`;
+  private usersURL = `http://${this.host}/boomi/Basic-Crud-in-Angular-4-using-Codeigniter-3.1.6/api/v1/users`;
    
   constructor(private http: Http) {    
 

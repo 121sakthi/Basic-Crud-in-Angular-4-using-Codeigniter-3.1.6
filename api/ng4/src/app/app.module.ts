@@ -15,6 +15,9 @@ import {UserUpdateComponent} from './user-update.component';
 
 // Services
 import {UserService} from './user.service';
+import { ProductComponent } from './product/product.component';
+
+import { PagerService } from './_services/index';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,8 @@ import {UserService} from './user.service';
     UsersComponent,
     DashboardComponent,
     UserAddComponent,
-    UserUpdateComponent
+    UserUpdateComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +36,7 @@ import {UserService} from './user.service';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [UserService],
+  providers: [UserService,PagerService],
   bootstrap: [AppComponent]
 })
 
